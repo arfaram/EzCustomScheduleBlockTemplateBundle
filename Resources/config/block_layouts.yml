@@ -1,0 +1,6 @@
+blocks:
+    schedule:
+        views:
+          schedule_featured:
+                template: "EzCustomScheduleBlockTemplateBundle:blocks:schedule_featured.html.twig"
+                name: Featured Schedule Block

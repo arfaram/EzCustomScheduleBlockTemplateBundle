@@ -1,0 +1,3 @@
+{% set imageContentId = content.getFieldValue('image').destinationContentId %}
+    {{ render( controller( "ez_content:viewAction", {'contentId': imageContentId, 'viewType': 'line', 'params': {  'alt': content.getFieldValue('name') } } ) ) }}
+<h4><a class="featured-article-link" href="{{ path('ez_urlalias', {'contentId': content.id}) }}">{{ ez_content_name(content) }}</a></h4>

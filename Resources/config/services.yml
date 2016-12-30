@@ -1,0 +1,4 @@
+services:
+#    custom_schedule_block_template.example:
+#        class: EzCustomScheduleBlockTemplateBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

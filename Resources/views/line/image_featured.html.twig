@@ -1,0 +1,4 @@
+{% set imageAlias = ez_image_alias(content.getField('image'), content.versionInfo, 'featured_article') %}
+<div class="featured-article-image">
+    <img alt="{{ content.getFieldValue('image').alternativeText }}" src="{{ imageAlias.uri }}"/>
+</div>

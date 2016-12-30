@@ -1,0 +1,18 @@
+system:
+    default:
+        content_view:
+            featured:
+                article:
+                    template: "EzCustomScheduleBlockTemplateBundle:featured:article.html.twig"
+                    match:
+                        Identifier\ContentType: "article"
+            line:
+                image:
+                    template: "EzCustomScheduleBlockTemplateBundle:line:image_featured.html.twig"
+                    match:
+                        Identifier\ContentType: image
+        image_variations:
+            featured_article:
+                reference: null
+                filters:
+                    - {name: geometry/scale, params: [200, 200] }
